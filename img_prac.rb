@@ -8,10 +8,12 @@ class Image
     def output_image
       @image.each do |y|
         x= y.flatten.join
-        puts x
+        p x
     end
   end
 end
+
+
 
 image = Image.new([[0, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 0, 0]])
 
